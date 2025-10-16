@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Perusahaan Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Mengaplikasikan font Poppins ke seluruh halaman */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="#hero" class="flex-shrink-0 flex items-center space-x-2">
+                        <svg class="w-10 h-10 text-sky-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.532 1.532 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                        <span class="text-xl font-bold text-slate-800">LogoInc</span>
+                    </a>
+                    
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex items-center space-x-8">
+                        <li><a href="#hero" class="nav-link active">Beranda</a></li>
+                        <li class="relative group">
+                            <a href="#profil" class="nav-link">Profil</a>
+                            <ul class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                                <li><a href="#sejarah" class="submenu-link">Sejarah</a></li>
+                                <li><a href="#visi-misi" class="submenu-link">Visi & Misi</a></li>
+                                <li><a href="#tim-kami" class="submenu-link">Tim Kami</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    </ul>
+
+                    <!-- Burger Menu Button -->
+                    <div class="md:hidden">
+                        <button id="burger-menu" class="text-slate-800 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <li><a href="#hero" class="mobile-link">Beranda</a></li>
+                    <li><a href="#profil" class="mobile-link">Profil</a></li>
+                    <li><a href="#sejarah" class="mobile-link pl-8">- Sejarah</a></li>
+                    <li><a href="#visi-misi" class="mobile-link pl-8">- Visi & Misi</a></li>
+                    <li><a href="#tim-kami" class="mobile-link pl-8">- Tim Kami</a></li>
+                    <li><a href="#layanan" class="mobile-link">Layanan</a></li>
+                    <li><a href="#testimonials" class="mobile-link">Testimoni</a></li>
+                    <li><a href="kontak.html" class="mobile-link">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Membangun Masa Depan Melalui Inovasi</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Kami menyediakan solusi terdepan untuk membantu bisnis Anda bertumbuh dan beradaptasi di era digital.</p>
+                <a href="#layanan" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Lihat Layanan Kami
+                </a>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profil" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-4">Tentang Perusahaan Kami</h2>
+                <p class="text-center max-w-3xl mx-auto mb-16">[Nama Perusahaan] adalah pemimpin di industri [Sebutkan Industri] dengan komitmen untuk memberikan kualitas, inovasi, dan layanan pelanggan yang luar biasa. Sejak [Tahun Berdiri], kami telah membantu ratusan klien mencapai tujuan mereka.</p>
+                
+                <div class="space-y-12">
+                     <div id="sejarah">
+                        <h3 class="text-2xl font-semibold text-slate-800">Sejarah</h3>
+                        <p class="mt-2">Berawal dari sebuah ide sederhana, perusahaan kami didirikan dengan misi untuk merevolusi pasar. Perjalanan kami dipenuhi dengan dedikasi dan kerja keras, membawa kami menjadi salah satu pemain kunci di industri saat ini.</p>
+                    </div>
+                    <div id="visi-misi">
+                        <h3 class="text-2xl font-semibold text-slate-800">Visi & Misi</h3>
+                        <p class="mt-2"><strong>Visi:</strong> Menjadi perusahaan paling inovatif dan terpercaya di tingkat global. <br><strong>Misi:</strong> Memberikan solusi bernilai tinggi kepada klien kami melalui teknologi canggih dan keahlian sumber daya manusia yang unggul.</p>
+                    </div>
+                     <div id="tim-kami">
+                        <h3 class="text-2xl font-semibold text-slate-800">Tim Kami</h3>
+                        <p class="mt-2">Kami didukung oleh tim profesional yang beragam dan berbakat, masing-masing membawa keahlian unik dan semangat untuk kesuksesan bersama. Kami percaya bahwa kolaborasi adalah kunci keberhasilan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="layanan" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Layanan Unggulan Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="text-5xl text-sky-500 mb-4">✓</div>
+                        <h3 class="text-xl font-bold mb-2">Konsultasi Bisnis</h3>
+                        <p>Strategi ahli untuk mengoptimalkan operasi dan pertumbuhan bisnis Anda.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="text-5xl text-sky-500 mb-4">✓</div>
+                        <h3 class="text-xl font-bold mb-2">Pengembangan Digital</h3>
+                        <p>Membangun solusi digital kustom, mulai dari website hingga aplikasi mobile.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="text-5xl text-sky-500 mb-4">✓</div>
+                        <h3 class="text-xl font-bold mb-2">Pemasaran Kreatif</h3>
+                        <p>Kampanye pemasaran yang berdampak untuk meningkatkan jangkauan merek Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonial Carousel Section -->
+        <section id="testimonials" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Apa Kata Klien Kami</h2>
+                <!-- Swiper -->
+                <div class="swiper-container overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-lg p-8 m-4">
+                                <p class="mb-4">"Layanan yang luar biasa! Tim mereka sangat profesional dan responsif. Proyek kami selesai tepat waktu dengan hasil yang melebihi ekspektasi."</p>
+                                <div class="font-bold text-slate-800">- Klien Satu</div>
+                                <div class="text-sm text-gray-500">CEO, Tech Corp</div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-lg p-8 m-4">
+                                <p class="mb-4">"Bekerja dengan mereka adalah keputusan terbaik. Mereka tidak hanya memberikan solusi, tetapi juga wawasan yang berharga untuk bisnis kami."</p>
+                                <div class="font-bold text-slate-800">- Klien Dua</div>
+                                <div class="text-sm text-gray-500">Manager, Creative Inc.</div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-lg p-8 m-4">
+                                <p class="mb-4">"Sangat direkomendasikan! Pendekatan mereka yang inovatif benar-benar membantu kami mencapai target pasar yang baru."</p>
+                                <div class="font-bold text-slate-800">- Klien Tiga</div>
+                                <div class="text-sm text-gray-500">Founder, Startup Maju</div>
+                            </div>
+                        </div>
+                         <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-lg p-8 m-4">
+                                <p class="mb-4">"Komunikasi yang jelas dan hasil yang solid. Kami sangat puas dengan kolaborasi ini dan berharap dapat bekerja sama lagi di masa depan."</p>
+                                <div class="font-bold text-slate-800">- Klien Empat</div>
+                                <div class="text-sm text-gray-500">Direktur, Global Solutions</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination mt-8 relative"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white text-center py-8">
+        <p>&copy; 2025 Nama Perusahaan. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="text-xs text-gray-400 mt-2">@elinf_zubs</p>
+    </footer>
+
+    <!-- SwiperJS JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Toggle Mobile Menu
+            burgerMenu.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Active link highlighting on scroll
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) { // 80 is navbar height
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active', 'text-sky-500', 'border-b-2', 'border-sky-500');
+                    const href = link.getAttribute('href');
+                    // Check if it's a section link before processing
+                    if (href.startsWith('#')) {
+                        const id = href.substring(1);
+                        if (id === current) {
+                            link.classList.add('active', 'text-sky-500', 'border-b-2', 'border-sky-500');
+                        }
+                    }
+                });
+            });
+            
+            // Initialize Swiper
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2, },
+                    1024: { slidesPerView: 3, }
+                }
+            });
+
+            // Custom styles for links and swiper
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .nav-link { @apply text-slate-800 font-semibold pb-2 transition duration-300; }
+                .nav-link:hover { @apply text-sky-500; }
+                .nav-link.active { @apply text-sky-500 border-b-2 border-sky-500; }
+                .submenu-link { @apply block px-4 py-2 text-sm text-slate-700 hover:bg-sky-50 hover:text-sky-600; }
+                .mobile-link { @apply block py-2 px-3 text-base font-medium text-slate-700 rounded-md hover:bg-gray-200; }
+                .swiper-pagination-bullet-active { background-color: #0ea5e9 !important; }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
+
