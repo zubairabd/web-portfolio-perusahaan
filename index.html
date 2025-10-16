@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Perusahaan Modern</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Konfigurasi Tailwind -->
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          primary: '#0ea5e9',
+          secondary: '#1e293b',
+        },
+      },
+    },
+  };
+</script>
+
+<!-- CDN Tailwind versi produksi + plugin tambahan -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
     <!-- SwiperJS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
