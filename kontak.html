@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Profil Perusahaan Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="index.html" class="flex-shrink-0 flex items-center space-x-2">
+                        <svg class="w-10 h-10 text-sky-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.532 1.532 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                         <span class="text-xl font-bold text-slate-800">LogoInc</span>
+                    </a>
+                    
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex items-center space-x-8">
+                        <li><a href="index.html#hero" class="nav-link">Beranda</a></li>
+                        <li class="relative group">
+                            <a href="index.html#profil" class="nav-link">Profil</a>
+                             <ul class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                                <li><a href="index.html#sejarah" class="submenu-link">Sejarah</a></li>
+                                <li><a href="index.html#visi-misi" class="submenu-link">Visi & Misi</a></li>
+                                <li><a href="index.html#tim-kami" class="submenu-link">Tim Kami</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#layanan" class="nav-link">Layanan</a></li>
+                        <li><a href="index.html#testimonials" class="nav-link">Testimoni</a></li>
+                        <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+                    </ul>
+
+                    <!-- Burger Menu Button -->
+                    <div class="md:hidden">
+                        <button id="burger-menu" class="text-slate-800 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <li><a href="index.html#hero" class="mobile-link">Beranda</a></li>
+                    <li><a href="index.html#profil" class="mobile-link">Profil</a></li>
+                    <li><a href="index.html#layanan" class="mobile-link">Layanan</a></li>
+                    <li><a href="index.html#testimonials" class="mobile-link">Testimoni</a></li>
+                    <li><a href="kontak.html" class="mobile-link">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-20">
+        <!-- Contact Details Section -->
+        <section id="kontak-detail" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-4">Hubungi Kami</h2>
+                <p class="text-center max-w-3xl mx-auto mb-16">Kami siap membantu Anda. Silakan hubungi kami melalui detail di bawah ini atau kunjungi kantor kami.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Info -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-slate-800 mb-4">Detail Kontak</h3>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                             <svg class="w-8 h-8 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">WhatsApp</h4>
+                                <a href="https://wa.me/6281234567890" target="_blank" class="text-sky-600 hover:underline">+62 812-3456-7890</a>
+                            </div>
+                        </div>
+                         <div class="flex items-center space-x-4">
+                             <svg class="w-8 h-8 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <a href="mailto:info@logoinc.com" class="text-sky-600 hover:underline">info@logoinc.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                           <svg class="w-8 h-8 text-sky-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Alamat Kantor</h4>
+                                <p class="text-gray-600">Jl. Inovasi No. 42, Cyber Tower Lt. 10<br>Jakarta Selatan, DKI Jakarta, 12950<br>Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="rounded-xl shadow-lg overflow-hidden h-full">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.419999796035!2d106.82458421471708!3d-6.208835995508826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fd540de5!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1668152200123!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full w-full"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white text-center py-8">
+        <p>&copy; 2025 Nama Perusahaan. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="text-xs text-gray-400 mt-2">@elinf_zubs</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle Mobile Menu
+            burgerMenu.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Custom styles for links
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .nav-link { @apply text-slate-800 font-semibold pb-2 transition duration-300; }
+                .nav-link:hover { @apply text-sky-500; }
+                .nav-link.active { @apply text-sky-500 border-b-2 border-sky-500; }
+                .submenu-link { @apply block px-4 py-2 text-sm text-slate-700 hover:bg-sky-50 hover:text-sky-600; }
+                .mobile-link { @apply block py-2 px-3 text-base font-medium text-slate-700 rounded-md hover:bg-gray-200; }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
